@@ -1,0 +1,21 @@
+<%- include('includes/header'); %>
+
+<div class="container">
+    <% items.forEach(function(item) { %>
+        <a href="/download/yt/<%= item.id.videoId %>">
+            <div class="mb-2 card">
+                <img class="card-img-top" src="<%= item.snippet.thumbnails.medium.url %>">
+                <div class="card-body">
+                        <span class="text-muted channelTitle">
+                            <%= item.snippet.channelTitle %>
+                        </span>
+                    <p class="card-text mb-2">
+                        <%= item.snippet.title %>
+                    </p>
+                </div>
+            </div>
+        </a>
+    <% }); %>
+</div>
+
+<%- include('includes/footer'); %>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Poppy <3</title>
+        <meta name="description" content="Poppy Music">
+        <meta name="robots" content="noindex">
+
+        <meta name="theme-color" content="#ffd9f5">
+        <meta name="msapplication-navbutton-color" content="#ffd9f5">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffd9f5">
+        
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light justify-content-between">
+                <a class="navbar-brand" href="/">
+                    <img src="/img/logo.svg" width="180" class="d-inline-block align-top" alt="">
+                </a>
+                <ul class="navbar-nav flex-row">
+                    <% if (typeof user === "object") { %>
+                    <% } else { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                    <% } %>
+                </ul>
+            </nav>
+        </header>
+        <main class="mb-4 mt-3">

@@ -1,0 +1,13 @@
+<%- include('includes/header'); %>
+
+<div class="container">
+    <iframe id="ytplayer" type="text/html" width="300" height="360" frameborder="0"
+        src="https://www.youtube.com/embed/<%= id %>?autoplay=1" 
+        onload="document.getElementById('ytplayer').width = window.innerWidth - 30;"></iframe>
+
+    <form class="mt-4" method="POST">
+        <button type="submit" class="btn btn-primary">Download</button>
+    </form>
+</div>
+
+<%- include('includes/footer'); %>
